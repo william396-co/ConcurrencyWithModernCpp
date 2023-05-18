@@ -6,7 +6,9 @@
 
 class Spinlock
 {
-    std::atomic_flag flag = ATOMIC_FLAG_INIT;
+//    std::atomic_flag flag = ATOMIC_FLAG_INIT;
+//    std::atomic_flag flag(ATOMIC_FLAG_INIT); // unspecfied
+    std::atomic_flag flag{ATOMIC_FLAG_INIT};
 
 public:
     void lock()
