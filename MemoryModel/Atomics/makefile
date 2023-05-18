@@ -3,7 +3,7 @@ override APP = a
 TARGET_EXEC := $(APP).out
 
 BUILD_DIR := ./build
-SRC_DIRS := .  ../util
+SRC_DIRS := .  ../../util
 LIBS = -lpthread
 
 # Find all the C and C++ files we want to compile
