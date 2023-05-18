@@ -4,7 +4,7 @@ TARGET_EXEC := $(APP).out
 
 BUILD_DIR := ./build
 SRC_DIRS := .  ../../util
-LIBS = -lpthread
+LIBS = -latomic  -lpthread 
 
 # Find all the C and C++ files we want to compile
 # Note the single quotes around the * expressions. The shell will incorrectly expand these otherwise, but we want to send the * directly to the find command.
